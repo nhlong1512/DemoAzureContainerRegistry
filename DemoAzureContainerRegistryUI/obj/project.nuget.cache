@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UO/R/LzaQsJiWxJgOOuJGjVA6BhZOeXAl5udviiwEfpoVp+gMOCA3vfE0Q3J67m2qWHyJON0e8FNGVgCh12oyw==",
+  "dgSpecHash": "sewvhppTTNdF8/cn4vhHgD13gDQsdyKeyNGkxD0bo0/fb0+xX+/0rboKHybLJ4NE7zG6x7Bzuaxd/m6+jkPUNA==",
   "success": true,
-  "projectFilePath": "D:\\NPVS\\DemoAzureContainerRegistry\\DemoAzureContainerRegistryUI\\DemoAzureContainerRegistryUI.csproj",
+  "projectFilePath": "D:\\VS\\DemoAzureContainerRegistry\\DemoAzureContainerRegistryUI\\DemoAzureContainerRegistryUI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\long.nguyen\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
   ],
   "logs": []
 }
