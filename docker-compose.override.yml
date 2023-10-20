@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  demoazurecontainerregistry:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  demoazurecontainerregistryui:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

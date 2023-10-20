@@ -1,0 +1,23 @@
+name: dockercompose10443337831731123414
+services:
+  demoazurecontainerregistry:
+    build:
+      context: D:\NPVS\DemoAzureContainerRegistry
+      dockerfile: DemoAzureContainerRegistry/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: demoazurecontainerregistry
+    networks:
+      default: null
+  demoazurecontainerregistryui:
+    build:
+      context: D:\NPVS\DemoAzureContainerRegistry
+      dockerfile: DemoAzureContainerRegistryUI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: demoazurecontainerregistryui
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose10443337831731123414_default

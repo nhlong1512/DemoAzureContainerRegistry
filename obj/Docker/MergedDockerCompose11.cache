@@ -1,0 +1,22 @@
+name: dockercompose10443337831731123414
+services:
+  demoazurecontainerregistry:
+    build:
+      context: D:\NPVS\DemoAzureContainerRegistry
+      dockerfile: DemoAzureContainerRegistry/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      acrnetwork: null
+  demoazurecontainerregistryui:
+    build:
+      context: D:\NPVS\DemoAzureContainerRegistry
+      dockerfile: DemoAzureContainerRegistryUI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      acrnetwork: null
+networks:
+  acrnetwork:
+    name: dockercompose10443337831731123414_acrnetwork
+    driver: bridge

@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  demoazurecontainerregistry:
+    build:
+      context: .
+      dockerfile: DemoAzureContainerRegistry/Dockerfile
+    networks:
+      - acrnetwork
+    ports:
+      - "8081:80"
+
+  demoazurecontainerregistryui:
+    build:
+      context: .
+      dockerfile: DemoAzureContainerRegistryUI/Dockerfile
+    networks:
+      - acrnetwork
+    ports:
+      - "8080:80"
+networks:
+  acrnetwork: 
+    driver: bridge
+      

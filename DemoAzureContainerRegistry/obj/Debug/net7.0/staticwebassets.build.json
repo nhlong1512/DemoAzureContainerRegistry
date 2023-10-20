@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hRK6OLDbDmXano5r/xdBaOPQYUY/sfLY4AJG1+MJm2g=",
+  "Source": "DemoAzureContainerRegistry",
+  "BasePath": "_content/DemoAzureContainerRegistry",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
