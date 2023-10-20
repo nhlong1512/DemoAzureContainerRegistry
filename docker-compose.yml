@@ -2,15 +2,17 @@ version: '3.4'
 
 services:
   demoazurecontainerregistry:
+    image: demoacr2010.azurecr.io/demoazurecontainerregistry
     build:
       context: .
       dockerfile: DemoAzureContainerRegistry/Dockerfile
+    environment:
+      - ASPNETCORE_URLS=http://+80
     networks:
       - acrnetwork
-    ports:
-      - "8081:80"
 
   demoazurecontainerregistryui:
+    image: demoacr2010.azurecr.io/demoazurecontainerregistryui
     build:
       context: .
       dockerfile: DemoAzureContainerRegistryUI/Dockerfile
@@ -18,6 +20,8 @@ services:
       - acrnetwork
     ports:
       - "8080:80"
+    environment:
+      - ASPNETCORE_URLS=http://+80
 networks:
   acrnetwork: 
     driver: bridge

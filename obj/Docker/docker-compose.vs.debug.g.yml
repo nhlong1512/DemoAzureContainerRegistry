@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   demoazurecontainerregistry:
-    image: demoazurecontainerregistry:dev
+    image: demoacr2010.azurecr.io/demoazurecontainerregistry:dev
     container_name: DemoAzureContainerRegistry_1
     build:
       target: base
@@ -31,7 +31,7 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
   demoazurecontainerregistryui:
-    image: demoazurecontainerregistryui:dev
+    image: demoacr2010.azurecr.io/demoazurecontainerregistryui:dev
     container_name: DemoAzureContainerRegistryUI_1
     build:
       target: base
